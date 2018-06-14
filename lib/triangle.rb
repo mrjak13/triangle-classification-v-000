@@ -17,6 +17,8 @@ class Triangle
       :isosceles
     elsif side_1 != side_2 && side_2 != side_3
       :scalene
+    else
+      raise TriangleError
     end
   end
 
